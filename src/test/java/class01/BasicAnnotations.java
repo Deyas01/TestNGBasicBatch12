@@ -7,24 +7,31 @@ import org.testng.annotations.Test;
 public class BasicAnnotations {
 
     @Test
-    public void firstTest(){
+    public void cfirstTest(){
         System.out.println("This is my first testcase");
     }
+
     @Test
-public void secondTest(){
-    System.out.println("This is my Second testcase");
-}
+    public void asecondTest(){
+        System.out.println("This is my second testcase");
+    }
+
     @Test
-    public void thirdTest(){
+    public void bthirdTest(){
         System.out.println("This is my third testcase");
     }
+
     @BeforeMethod
     public void beforemethod(){
-        System.out.println("***** I am precondition ********");
-    }
-    @AfterMethod
-    public void aftermethod(){
-        System.out.println("***** I am postcondition ********");
+        System.out.println("***************I am Precondition**********");
 
     }
+
+    @AfterMethod
+    public  void aftermethod(){
+
+        System.out.println("^^^^^^^^^^I am Postcondition^^^^^^^^^^^^");
+    }
+
+
 }
